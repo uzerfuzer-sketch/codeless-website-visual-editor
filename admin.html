@@ -8,13 +8,60 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <style>
-:root{--bg:#0a0908;--s1:#0e0d0b;--s2:#121009;--s3:#171512;--s4:#1d1a16;--s5:#232018;--b1:#1a1815;--b2:#21201b;--b3:#2c2a23;--b4:#3a3730;--t1:#e4dcd2;--t2:#9a9085;--t3:#5c5650;--t4:#32302c;--gold:#c8a45a;--gold-h:#d8b468;--gold-dim:#7a6438;--gold-bg:rgba(200,164,90,.08);--gold-glow:rgba(200,164,90,.20);--danger:#c84848;--danger-bg:rgba(200,72,72,.10);--success:#5a9e70;--r1:4px;--r2:6px;--r3:9px;--tx:.13s ease;--ff:'Inter',system-ui,-apple-system,sans-serif;--mono:'JetBrains Mono','Fira Code',monospace}
+/* ╔══════════════════════════════════════════════════════════════╗
+   ║  EDITOR VISUAL — Design System Premium                      ║
+   ║  Palette: deep warm-black / gold / Inter + JetBrains Mono   ║
+   ╚══════════════════════════════════════════════════════════════╝ */
+:root{
+  /* Surfaces */
+  --bg:        #0a0908;
+  --s1:        #0e0d0b;
+  --s2:        #121009;
+  --s3:        #171512;
+  --s4:        #1d1a16;
+  --s5:        #232018;
+  /* Borders */
+  --b1:        #1a1815;
+  --b2:        #21201b;
+  --b3:        #2c2a23;
+  --b4:        #3a3730;
+  /* Text */
+  --t1:        #e4dcd2;
+  --t2:        #9a9085;
+  --t3:        #5c5650;
+  --t4:        #32302c;
+  /* Accent */
+  --gold:      #c8a45a;
+  --gold-h:    #d8b468;
+  --gold-dim:  #7a6438;
+  --gold-bg:   rgba(200,164,90,.08);
+  --gold-glow: rgba(200,164,90,.20);
+  /* Semantic */
+  --danger:    #c84848;
+  --danger-bg: rgba(200,72,72,.10);
+  --success:   #5a9e70;
+  /* Radius */
+  --r1: 4px;
+  --r2: 6px;
+  --r3: 9px;
+  /* Transitions */
+  --tx: .13s ease;
+  /* Fonts */
+  --ff: 'Inter',system-ui,-apple-system,sans-serif;
+  --mono: 'JetBrains Mono','Fira Code',monospace;
+}
+
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;overflow:hidden;font-family:var(--ff);background:var(--bg);color:var(--t1)}
+html,body{height:100%;overflow:hidden;font-family:var(--ff);background:var(--bg);color:var(--t1);-webkit-font-smoothing:antialiased}
+
+/* ── SCROLLBARS ── */
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--b3);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--b4)}
 </style>
 </head>
 <body>
-<h1>Placeholder — versión completa pendiente</h1>
-<p>Este archivo se está preparando para subida completa. Ver <a href="README.md">README</a>.</p>
+<div id="app-marker" data-status="uploading-incrementally"></div>
 </body>
 </html>
